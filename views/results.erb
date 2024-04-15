@@ -4,4 +4,8 @@
   <%= @num_dice%>d<%= @num_sides %>
 </h1>
 
-<%= rolls %>
+<ol>
+<% @rolls.each do |a_roll| %>
+<li>Result: <%= a_roll %></li>
+<% end %>
+</ol>
